@@ -13,14 +13,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Tailwind CSS CDN Link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .outfit-uniquifier {
+        font-family: "Outfit", serif;
+      }
+    </style>
   </head>
   <body class="bg-slate-800">
     <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
       <header>
         <nav class="flex justify-center items-center border-4 border-red-500y">
-          <div
-            class="mt-76 relative flex justify-center items-center w-9/12"
-          >
+          <div class="mt-76 relative flex justify-center items-center w-9/12">
             <img class="absolute" src="./assets/bg.png" alt="" />
             <img class="absolute mb-[50%]" src="./assets/Group.png" alt="" />
           </div>
@@ -28,22 +38,45 @@
       </header>
 
       <!-- Hero Added from DaisyUI -->
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row-reverse">   
-          <div class="card bg-base-100 w-96 shrink-0 shadow-2xl">
-            <div class="card-body">
-              <fieldset class="fieldset">
-                <label class="fieldset-label">Mobile Number</label>
-                <input type="number" class="input" placeholder="Enter your number" />
-                <label class="fieldset-label">4 Digit Pin</label>
-                <input type="password" class="input" placeholder="Password" />
-                <div><a class="link link-hover">Forgot password?</a></div>
-                <button class="bg-black text-white btn btn-neutral mt-4">Login</button>
-              </fieldset>
+      <form>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label
+                    class="fieldset-label outfit-uniquifier text-xl text-[#080808] font-semibold"
+                    >Mobile Number</label
+                  >
+                  <input id="mobile-number"
+                    type="number"
+                    class="input outfit-uniquifier text-xl bg-[#F4F5F7] px-2"
+                    placeholder="Enter your number" required
+                  />
+                  <label
+                    class="fieldset-label outfit-uniquifier text-xl text-[#080808] font-semibold"
+                    >4 Digit Pin</label
+                  >
+                  <input id="pin-number"
+                    type="password"
+                    class="input outfit-uniquifier text-xl bg-[#F4F5F7] px-2"
+                    placeholder="Type your PIN" required
+                  />
+                  <button
+                    id="login-btn"
+                    class="bg-[#0874F2] rounded-3xl py-3 mt-4 font-bold text-xl text-[white]"
+                  >
+                    Login
+                  </button>
+                </fieldset>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </section>
+
+    <!-- Link External JavaScript File -->
+    <script src="./script/login.js"></script>
   </body>
 </html>
