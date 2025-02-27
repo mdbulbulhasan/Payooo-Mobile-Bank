@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <!-- DaisyUI CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind CSS CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CDN Link -->
+    <script
+      src="https://kit.fontawesome.com/845571ee6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .outfit-uniquifier {
+        font-family: "Outfit", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-200">
+      <nav class="flex justify-around items-center shadow-md py-4">
+        <div class="flex justify-center items-center gap-1">
+          <img class="w-16" src="./assets/Group.png" alt="" />
+          <div>
+            <h1
+              class="text-[rgba(8,8,8,0.9)] outfit-uniquifier text-lg font-extrabold"
+            >
+              $ <span id="main-balance">45000</span>
+            </h1>
+            <p
+              class="text-[rgba(8,8,8,0.5)] outfit-uniquifier text-sm font-normal"
+            >
+              Avaiable balance
+            </p>
+          </div>
+        </div>
+        <button
+          class="border-2 border-gray-300 p-2 rounded-lg shadow-sm text-[rgba(8,8,8,0.5)] text-sm font-normal outfit-uniquifier"
+        >
+          Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+      </nav>
+
+      <section class="py-4 mx-6">
+        <h1 class="text-[rgb(8,8,8)] outfit-uniquifier text-2xl font-bold">
+          🔥 Welcome to Payooo!
+        </h1>
+        <p class="text-[rgba(8,8,8,0.5)] outfit-uniquifier text-sm font-normal">
+          Enjoy easy and convenient financial services with us. <br />
+          Cashout charge is low and
+        </p>
+
+        <div class="grid grid-cols-3 gap-5 py-5">
+          <div
+            class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
+          >
+            <img class="w-10 mx-auto" src="./assets/wallet1.png" alt="" />
+            <p
+              class="text-[rgb(8,116,242)] outfit-uniquifier text-sm font-bold"
+            >
+              Add Money
+            </p>
+          </div>
+          <div
+            class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
+          >
+            <img class="w-10 mx-auto" src="./assets/send1.png" alt="" />
+            <p
+              class="text-[rgba(8,8,8,0.7)] outfit-uniquifier text-sm font-bold"
+            >
+              Cashout
+            </p>
+          </div>
+          <div
+            class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
+          >
+            <img class="w-10 mx-auto" src="./assets/money1.png" alt="" />
+            <p
+              class="text-[rgba(8,8,8,0.7)] outfit-uniquifier text-sm font-bold"
+            >
+              Transfer Money
+            </p>
+          </div>
+          <div
+            class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
+          >
+            <img class="w-10 mx-auto" src="./assets/bonus1.png" alt="" />
+            <p
+              class="text-[rgba(8,8,8,0.7)] outfit-uniquifier text-sm font-bold"
+            >
+              Get Bonus
+            </p>
+          </div>
+          <div
+            class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
+          >
+            <img class="w-10 mx-auto" src="./assets/purse1.png" alt="" />
+            <p
+              class="text-[rgba(8,8,8,0.7)] outfit-uniquifier text-sm font-bold"
+            >
+              Pay Bill
+            </p>
+          </div>
+          <div
+            class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
+          >
+            <img class="w-10 mx-auto" src="./assets/transaction1.png" alt="" />
+            <p
+              class="text-[rgba(8,8,8,0.7)] outfit-uniquifier text-sm font-bold"
+            >
+              Transactions
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-4">
+        <h2
+          class="mx-8 text-[rgba(8,8,8,0.9)] outfit-uniquifier text-xl font-semibold"
+        >
+          Add Money
+        </h2>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <legend
+                    class="text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                  >
+                    Select A Bank
+                  </legend>
+                  <select
+                    class="select-bordered outfit-uniquifier text-sm text-[rgb(8,8,8,0.5)] bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                  >
+                    <option disabled selected clas>Select Bank</option>
+                    <option value="bkash">Bkash</option>
+                    <option value="bkash">Nagad</option>
+                    <option value="bkash">DBBL</option>
+                    <option value="bkash">Islami Bank Plc.</option>
+                  </select>
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >Bank Account Number</label
+                  >
+                  <input
+                    value="01612838785"
+                    id="account-number"
+                    type="number"
+                    maxlength="11"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter 11 digit account number"
+                    required
+                  />
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >Amount to Add</label
+                  >
+                  <input
+                    id="amountAdd"
+                    type="number"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter Amount"
+                    required
+                  />
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >Pin Number</label
+                  >
+                  <input
+                    value="1234"
+                    id="pin-number"
+                    type="password"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter 4 digit pin number"
+                    required
+                  />
+                  <button
+                    id="add-Money"
+                    class="bg-[#0874F2] rounded-3xl py-3 mt-4 font-bold text-xl text-[white]"
+                  >
+                    Add Money
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+
+    <script src="./script/addMoney.js"></script>
+  </body>
+</html>
