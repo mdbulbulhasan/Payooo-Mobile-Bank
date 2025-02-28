@@ -49,7 +49,8 @@
             </p>
           </div>
         </div>
-        <button id="logOut"
+        <button
+          id="logOut"
           class="border-2 border-gray-300 p-2 rounded-lg shadow-sm text-[rgba(8,8,8,0.5)] text-sm font-normal outfit-uniquifier"
         >
           Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i>
@@ -65,16 +66,12 @@
           Cashout charge is low and
         </p>
 
-        <div  class="grid grid-cols-3 gap-5 py-5 cursor-pointer">
+        <div class="grid grid-cols-3 gap-5 py-5 cursor-pointer">
           <div id="addMoneyBox"
             class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
           >
             <img class="w-10 mx-auto" src="./assets/wallet1.png" alt="" />
-            <p 
-              class="outfit-uniquifier text-sm font-bold"
-            >
-              Add Money
-            </p>
+            <p class="outfit-uniquifier text-sm font-bold">Add Money</p>
           </div>
           <div id="cashOutBox"
             class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
@@ -86,7 +83,7 @@
               Cashout
             </p>
           </div>
-          <div
+          <div id="transferMoneyBox"
             class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
           >
             <img class="w-10 mx-auto" src="./assets/money1.png" alt="" />
@@ -96,7 +93,7 @@
               Transfer Money
             </p>
           </div>
-          <div
+          <div id="getBonusBox"
             class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
           >
             <img class="w-10 mx-auto" src="./assets/bonus1.png" alt="" />
@@ -106,7 +103,7 @@
               Get Bonus
             </p>
           </div>
-          <div
+          <div id="payBillBox"
             class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
           >
             <img class="w-10 mx-auto" src="./assets/purse1.png" alt="" />
@@ -116,7 +113,7 @@
               Pay Bill
             </p>
           </div>
-          <div
+          <div id = "transactionHistoryBox"
             class="card text-center border-2 border-gray-300 px-1 py-3 shadow-lg"
           >
             <img class="w-10 mx-auto" src="./assets/transaction1.png" alt="" />
@@ -261,6 +258,246 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="transferMoney" class="py-4">
+        <h2
+          class="mx-8 text-[rgba(8,8,8,0.9)] outfit-uniquifier text-xl font-semibold"
+        >
+          Transfer Money
+        </h2>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >User Account Number</label
+                  >
+                  <input
+                    value="01612838785"
+                    id="account-number"
+                    type="number"
+                    maxlength="11"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter 11 digit account number"
+                    required
+                  />
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >Amount</label
+                  >
+                  <input
+                    id="amountWithdraw"
+                    type="number"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter Amount"
+                    required
+                  />
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >Pin Number</label
+                  >
+                  <input
+                    value="1234"
+                    id="pin-number"
+                    type="password"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter 4 digit pin number"
+                    required
+                  />
+                  <button
+                    id="withdraw-Money"
+                    class="bg-[#0874F2] rounded-3xl py-3 mt-4 font-bold text-xl text-[white]"
+                  >
+                    Send Money
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="getBonus" class="py-4">
+        <h2
+          class="mx-8 text-[rgba(8,8,8,0.9)] outfit-uniquifier text-xl font-semibold"
+        >
+          Get Bonus
+        </h2>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >Enter Bonus Coupon</label
+                  >
+                  <input
+                    id="amountWithdraw"
+                    type="text"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter your coupon"
+                    required
+                  />
+                  <button
+                    id="get-Bonus"
+                    class="bg-[#0874F2] rounded-3xl py-3 mt-4 font-bold text-xl text-[white]"
+                  >
+                    Get Bonus
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="payBill" class="py-4">
+        <h2
+          class="mx-8 text-[rgba(8,8,8,0.9)] outfit-uniquifier text-xl font-semibold"
+        >
+          Pay Bill
+        </h2>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <legend
+                    class="text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                  >
+                    Select To Pay
+                  </legend>
+                  <select
+                    class="select-bordered outfit-uniquifier text-sm text-[rgb(8,8,8,0.5)] bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                  >
+                    <option disabled selected clas>Select Bank</option>
+                    <option value="bkash">Bkash</option>
+                    <option value="bkash">Nagad</option>
+                    <option value="bkash">DBBL</option>
+                    <option value="bkash">Islami Bank Plc.</option>
+                  </select>
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >Biller Account Number</label
+                  >
+                  <input
+                    value="01612838785"
+                    id="account-number"
+                    type="number"
+                    maxlength="11"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter 11 digit account number"
+                    required
+                  />
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >Amount To Pay</label
+                  >
+                  <input
+                    id="amountWithdraw"
+                    type="number"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter Amount"
+                    required
+                  />
+                  <label
+                    class="fieldset-label text-[rgba(8,8,8,0.7)] outfit-uniquifier text-xl font-semibold"
+                    >Pin Number</label
+                  >
+                  <input
+                    value="1234"
+                    id="pin-number"
+                    type="password"
+                    class="outfit-uniquifier text-sm bg-[#F4F5F7] px-2 py-3 rounded-lg"
+                    placeholder="Enter 4 digit pin number"
+                    required
+                  />
+                  <button
+                    id="withdraw-Money"
+                    class="bg-[#0874F2] rounded-3xl py-3 mt-4 font-bold text-xl text-[white]"
+                  >
+                    Pay Now
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="transactionHistory" class="py-4">
+        <div class="flex justify-between">
+          <h2
+          class="mx-8 text-[rgba(8,8,8,0.9)] outfit-uniquifier text-xl font-semibold"
+        >
+          Transaction History
+        </h2>
+        <p class="mx-9 text-[rgba(8,8,8,0.5)] outfit-uniquifier font-light">View All</p>
+        </div>
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+              <div class="card-body">
+                <div class="flex gap-5 items-center justify-start">
+                    <div class="bg-[rgba(8,8,8,0.05)] p-3 rounded-[32px]">
+                      <img src="./assets/wallet1.png" alt="">
+                    </div>
+                  <div>
+                    <h2 class="outfit-uniquifier text-lg font-semibold">Electricity Bill</h2>
+                    <p>Today 01:44 AM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+              <div class="card-body">
+                <div class="flex gap-5 items-center justify-start">
+                    <div class="bg-[rgba(8,8,8,0.05)] p-3 rounded-[32px]">
+                      <img src="./assets/wallet1.png" alt="">
+                    </div>
+                  <div>
+                    <h2 class="outfit-uniquifier text-lg font-semibold">Bank Deposit</h2>
+                    <p>Today 01:44 AM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+              <div class="card-body">
+                <div class="flex gap-5 items-center justify-start">
+                    <div class="bg-[rgba(8,8,8,0.05)] p-3 rounded-[32px]">
+                      <img src="./assets/wallet1.png" alt="">
+                    </div>
+                  <div>
+                    <h2 class="outfit-uniquifier text-lg font-semibold">Mobile Recharge</h2>
+                    <p>Today 01:44 AM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+              <div class="card-body">
+                <div class="flex gap-5 items-center justify-start">
+                    <div class="bg-[rgba(8,8,8,0.05)] p-3 rounded-[32px]">
+                      <img src="./assets/wallet1.png" alt="">
+                    </div>
+                  <div>
+                    <h2 class="outfit-uniquifier text-lg font-semibold">Gas Bill</h2>
+                    <p>Today 01:44 AM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
       </section>
     </section>
 
