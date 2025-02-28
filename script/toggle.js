@@ -1,3 +1,4 @@
+document.getElementById("addMoney").style.display = "none";
 document.getElementById("cashOut").style.display = "none";
 document.getElementById("transferMoney").style.display = "none";
 document.getElementById("getBonus").style.display = "none";
@@ -11,6 +12,7 @@ document.getElementById("addMoneyBox").addEventListener("click", function () {
   document.getElementById("getBonus").style.display = "none";
   document.getElementById("payBill").style.display = "none";
   document.getElementById("transactionHistory").style.display = "none";
+  document.getElementById("latestPayment").style.display = "none";
 });
 document.getElementById("cashOutBox").addEventListener("click", function () {
   document.getElementById("cashOut").style.display = "block";
@@ -19,6 +21,7 @@ document.getElementById("cashOutBox").addEventListener("click", function () {
   document.getElementById("getBonus").style.display = "none";
   document.getElementById("payBill").style.display = "none";
   document.getElementById("transactionHistory").style.display = "none";
+  document.getElementById("latestPayment").style.display = "none";
 });
 
 document
@@ -30,6 +33,7 @@ document
     document.getElementById("getBonus").style.display = "none";
     document.getElementById("payBill").style.display = "none";
     document.getElementById("transactionHistory").style.display = "none";
+    document.getElementById("latestPayment").style.display = "none";
   });
 document
   .getElementById("getBonusBox")
@@ -40,6 +44,7 @@ document
     document.getElementById("addMoney").style.display = "none";
     document.getElementById("payBill").style.display = "none";
     document.getElementById("transactionHistory").style.display = "none";
+    document.getElementById("latestPayment").style.display = "none";
   });
 document
   .getElementById("payBillBox")
@@ -50,6 +55,7 @@ document
     document.getElementById("cashOut").style.display = "none";
     document.getElementById("addMoney").style.display = "none";
     document.getElementById("transactionHistory").style.display = "none";
+    document.getElementById("latestPayment").style.display = "none";
     
   });
   document
@@ -61,5 +67,5 @@ document
     document.getElementById("transferMoney").style.display = "none";
     document.getElementById("cashOut").style.display = "none";
     document.getElementById("addMoney").style.display = "none";
-    
+    document.getElementById("latestPayment").style.display = "none";
   });
